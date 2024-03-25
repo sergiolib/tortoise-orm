@@ -19,8 +19,8 @@ from typing import (
     Union,
 )
 
-from pypika import Order, Query, Table
-from pypika.terms import Term
+from pypika_tortoise import Order, Query, Table
+from pypika_tortoise.terms import Term
 from typing_extensions import Self
 
 from tortoise import connections

@@ -1,6 +1,6 @@
 from typing import Union
 
-from pypika.terms import Function, Parameter
+from pypika_tortoise.terms import Function, Parameter
 
 
 class Rand(Function):  # type: ignore

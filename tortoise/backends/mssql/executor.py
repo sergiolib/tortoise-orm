@@ -1,6 +1,6 @@
 from typing import Any, Optional, Type, Union
 
-from pypika import Query
+from pypika_tortoise import Query
 
 from tortoise import Model, fields
 from tortoise.backends.odbc.executor import ODBCExecutor

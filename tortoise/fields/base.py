@@ -14,7 +14,7 @@ from typing import (
     overload,
 )
 
-from pypika.terms import Term
+from pypika_tortoise.terms import Term
 
 from tortoise.exceptions import ConfigurationError, ValidationError
 from tortoise.validators import Validator
@@ -107,7 +107,7 @@ class Field(Generic[VALUE], metaclass=_FieldMeta):
         Is this field able to be DB-generated?
 
     .. attribute:: function_cast
-        :annotation: Optional[pypika.Term] = None
+        :annotation: Optional[pypika_tortoise.Term] = None
 
         A casting term that we need to apply in case the DB needs emulation help.
 

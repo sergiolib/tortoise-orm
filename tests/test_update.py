@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from typing import Any
 
 import pytz
-from pypika.terms import Function
+from pypika_tortoise.terms import Function
 
 from tests.testmodels import (
     DatetimeFields,

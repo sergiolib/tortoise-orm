@@ -20,10 +20,10 @@ from typing import (
     overload,
 )
 
-from pypika import JoinType, Order, Table
-from pypika.functions import Cast, Count
-from pypika.queries import QueryBuilder
-from pypika.terms import Case, Field, Term, ValueWrapper
+from pypika_tortoise import JoinType, Order, Table
+from pypika_tortoise.functions import Cast, Count
+from pypika_tortoise.queries import QueryBuilder
+from pypika_tortoise.terms import Case, Field, Term, ValueWrapper
 from typing_extensions import Literal, Protocol
 
 from tortoise.backends.base.client import BaseDBAsyncClient, Capabilities
@@ -179,7 +179,7 @@ class AwaitableQuery(Generic[MODEL]):
         Applies standard ordering to QuerySet.
 
         :param model: The Model this queryset is based on.
-        :param table: ``pypika.Table`` to keep track of the virtual SQL table
+        :param table: ``pypika_tortoise.Table`` to keep track of the virtual SQL table
             (to allow self referential joins)
         :param orderings: What columns/order to order by
         :param annotations:  Annotations that may be ordered on

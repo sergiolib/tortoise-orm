@@ -19,9 +19,9 @@ from typing import (
     cast,
 )
 
-from pypika import JoinType, Parameter, Query, Table
-from pypika.queries import QueryBuilder
-from pypika.terms import ArithmeticExpression, Function
+from pypika_tortoise import JoinType, Parameter, Query, Table
+from pypika_tortoise.queries import QueryBuilder
+from pypika_tortoise.terms import ArithmeticExpression, Function
 
 from tortoise.exceptions import OperationalError
 from tortoise.expressions import F, RawSQL

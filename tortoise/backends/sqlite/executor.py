@@ -3,7 +3,7 @@ from decimal import Decimal
 from typing import Optional, Type, Union
 
 import pytz
-from pypika import Parameter
+from pypika_tortoise import Parameter
 
 from tortoise import Model, fields, timezone
 from tortoise.backends.base.executor import BaseExecutor

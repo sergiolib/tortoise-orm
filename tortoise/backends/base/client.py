@@ -1,7 +1,7 @@
 import asyncio
 from typing import Any, List, Optional, Sequence, Tuple, Type, Union
 
-from pypika import Query
+from pypika_tortoise import Query
 
 from tortoise.backends.base.executor import BaseExecutor
 from tortoise.backends.base.schema_generator import BaseSchemaGenerator
@@ -76,7 +76,7 @@ class BaseDBAsyncClient:
     Parameters get passed as kwargs, and is mostly driver specific.
 
     .. attribute:: query_class
-        :annotation: Type[pypika.Query]
+        :annotation: Type[pypika_tortoise.Query]
 
         The PyPika Query dialect (low level dialect)
 

@@ -2,8 +2,8 @@ import json
 import operator
 from typing import Any, Callable, Dict, List
 
-from pypika.enums import JSONOperators
-from pypika.terms import BasicCriterion, Criterion, Term, ValueWrapper
+from pypika_tortoise.enums import JSONOperators
+from pypika_tortoise.terms import BasicCriterion, Criterion, Term, ValueWrapper
 
 from tortoise.filters import is_null, not_equal, not_null
 

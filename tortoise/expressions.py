@@ -12,14 +12,14 @@ from typing import (
     cast,
 )
 
-from pypika import Case as PypikaCase
-from pypika import Field as PypikaField
-from pypika import Table
-from pypika.functions import DistinctOptionFunction
-from pypika.terms import ArithmeticExpression, Criterion
-from pypika.terms import Function as PypikaFunction
-from pypika.terms import Term
-from pypika.utils import format_alias_sql
+from pypika_tortoise import Case as PypikaCase
+from pypika_tortoise import Field as PypikaField
+from pypika_tortoise import Table
+from pypika_tortoise.functions import DistinctOptionFunction
+from pypika_tortoise.terms import ArithmeticExpression, Criterion
+from pypika_tortoise.terms import Function as PypikaFunction
+from pypika_tortoise.terms import Term
+from pypika_tortoise.utils import format_alias_sql
 
 from tortoise.exceptions import ConfigurationError, FieldError, OperationalError
 from tortoise.fields.relational import (
@@ -30,7 +30,7 @@ from tortoise.fields.relational import (
 from tortoise.query_utils import QueryModifier, _get_joins_for_related_field
 
 if TYPE_CHECKING:  # pragma: nocoverage
-    from pypika.queries import Selectable
+    from pypika_tortoise.queries import Selectable
 
     from tortoise.fields.base import Field
     from tortoise.models import Model
@@ -352,7 +352,7 @@ class Q(Expression):
         Resolves the logical Q chain into the parts of a SQL statement.
 
         :param model: The Model this Q Expression should be resolved on.
-        :param table: ``pypika.Table`` to keep track of the virtual SQL table
+        :param table: ``pypika_tortoise.Table`` to keep track of the virtual SQL table
             (to allow self referential joins)
         """
         if self.filters:
@@ -368,7 +368,7 @@ class Function(Expression):
     :param default_values: Extra parameters to the function.
 
     .. attribute:: database_func
-        :annotation: pypika.terms.Function
+        :annotation: pypika_tortoise.terms.Function
 
         The pypika function this represents.
 
@@ -455,7 +455,7 @@ class Function(Expression):
         Used to resolve the Function statement for SQL generation.
 
         :param model: Model the function is applied on to.
-        :param table: ``pypika.Table`` to keep track of the virtual SQL table
+        :param table: ``pypika_tortoise.Table`` to keep track of the virtual SQL table
             (to allow self referential joins)
         :return: Dict with keys ``"joins"`` and ``"fields"``
         """

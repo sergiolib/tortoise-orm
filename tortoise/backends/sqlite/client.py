@@ -5,7 +5,7 @@ from functools import wraps
 from typing import Any, Callable, List, Optional, Sequence, Tuple, TypeVar
 
 import aiosqlite
-from pypika import SQLLiteQuery
+from pypika_tortoise import SQLLiteQuery
 
 from tortoise.backends.base.client import (
     BaseDBAsyncClient,

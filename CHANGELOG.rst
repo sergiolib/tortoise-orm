@@ -9,6 +9,10 @@ Changelog
 0.20
 ====
 
+0.20.1-1
+------
+pypika-tortoise==0.1.6 to pypika-tortoise==0.1.6-1 (Substorm)
+
 0.20.1
 ------
 Added

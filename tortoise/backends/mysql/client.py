@@ -11,7 +11,7 @@ except ImportError:
     from pymysql.charset import charset_by_name
     from pymysql import err as errors
 
-from pypika import MySQLQuery
+from pypika_tortoise import MySQLQuery
 
 from tortoise import timezone
 from tortoise.backends.base.client import (

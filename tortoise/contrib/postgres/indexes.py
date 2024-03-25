@@ -1,6 +1,6 @@
 from typing import Optional, Tuple
 
-from pypika.terms import Term, ValueWrapper
+from pypika_tortoise.terms import Term, ValueWrapper
 
 from tortoise.indexes import PartialIndex
 

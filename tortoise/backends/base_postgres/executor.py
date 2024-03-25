@@ -1,9 +1,9 @@
 import uuid
 from typing import Optional, Sequence
 
-from pypika import Parameter
-from pypika.dialects import PostgreSQLQueryBuilder
-from pypika.terms import Term
+from pypika_tortoise import Parameter
+from pypika_tortoise.dialects import PostgreSQLQueryBuilder
+from pypika_tortoise.terms import Term
 
 from tortoise import Model
 from tortoise.backends.base.executor import BaseExecutor

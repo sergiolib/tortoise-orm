@@ -1,6 +1,6 @@
 from typing import Any, SupportsInt
 
-from pypika.dialects import MSSQLQuery
+from pypika_tortoise.dialects import MSSQLQuery
 
 from tortoise.backends.base.client import (
     Capabilities,

@@ -1,5 +1,5 @@
-from pypika.enums import Comparator
-from pypika.terms import BasicCriterion, Term
+from pypika_tortoise.enums import Comparator
+from pypika_tortoise.terms import BasicCriterion, Term
 
 from tortoise.contrib.postgres.functions import ToTsQuery, ToTsVector
 

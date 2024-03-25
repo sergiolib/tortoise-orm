@@ -1,8 +1,8 @@
 from copy import copy
 from typing import TYPE_CHECKING, List, Optional, Tuple
 
-from pypika import Table
-from pypika.terms import Criterion
+from pypika_tortoise import Table
+from pypika_tortoise.terms import Criterion
 
 from tortoise.exceptions import OperationalError
 from tortoise.fields.relational import (
