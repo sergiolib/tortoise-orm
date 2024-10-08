@@ -100,8 +100,8 @@ asyncmy = ["asyncmy"]
 asyncodbc = ["asyncodbc"]
 
 [[tool.poetry.source]]
-name = "private"
-url = "https://tromb.pkgs.visualstudio.com/Intelliplan/_packaging/private/pypi/simple/"
+name = "substorm"
+url = "https://pkgs.dev.azure.com/substorm/_packaging/tortoise-orm/pypi/simple/"
 priority = "supplemental"
 
 [build-system]
